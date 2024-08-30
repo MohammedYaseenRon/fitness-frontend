@@ -1,0 +1,158 @@
+.workout-container{
+    text-align: center;
+    padding:50px 20px;
+}
+.workout-content{
+    margin-bottom: 4rem;
+}
+.workout_card{
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    gap: 80px;
+    justify-items: center;
+}
+.workout_card-content{
+    background-color: var(--color-gray);
+    padding:10px;
+    width: 150px;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.content-h4{
+    font-family: var(--font-alt);
+    color: var(--color-golden);
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    
+}
+.p-para{
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    margin-bottom: 40px;
+
+}
+.workout-btn{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: none;
+    border-radius: 12px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-family: var(--font-alt);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+.workout-btn:hover{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+@media screen and (min-width:2000px) {
+    .workout_card-content{
+        width: 180px;
+        height: 180px;
+    }
+    .content-h4 {
+        font-size: 20px;
+    }
+
+    .p-para {
+        font-size: 14px;
+    }
+
+    .workout-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .workout_card {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+    }
+
+    .workout_card-content {
+        width: 160px; 
+        height: 180px;
+    }
+
+    .content-h4 {
+        font-size: 18px;
+    }
+
+    .p-para {
+        font-size: 13px;
+    }
+
+    .workout-btn {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 650px) {
+    .workout_card {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+
+    .workout_card-content {
+        width: 140px; 
+        height: 170px; 
+    }
+
+    .content-h4 {
+        font-size: 16px;
+    }
+
+    .p-para {
+        font-size: 12px;
+    }
+
+    .workout-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .workout_card-content {
+        width: 130px; 
+        height: 160px; 
+    }
+
+    .content-h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .p-para {
+        font-size: 12px;
+
+    }
+
+    .workout-btn {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,22 @@
+.header_content{
+    background-color: var(--color-black);
+}
+.header_content-h1 {
+    color: var(--color-bgwhite);
+    font-family: var(--font-base);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 117px;
+    font-size: 70px;
+}
+.header_content-h4{
+    color: var(--color-white);
+    font-size: 25px;
+    font-family: var(--font-base);
+    line-height: 70px;
+
+}
+.header_content-img img{
+    width: 100%;
+}
+
